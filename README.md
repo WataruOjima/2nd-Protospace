@@ -3,10 +3,9 @@
 | --------  | ------ | ----------- |
 | email     | string | null: false |
 | password  | string | null: false |
+| url       | string |             |
 | name      | string | null: false |
-| profile   | text   | null: false |
-| occupation| text   | null: false |
-| position  | text   | null: false |
+| profile   | text   |             |
 
 ### Association
 - has_many: posts
