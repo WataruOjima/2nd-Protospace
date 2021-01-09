@@ -9,10 +9,10 @@
 | position  | text   | null: false |
 
 ### Association
-- has_many: 
+- has_many: posts
 - has_many: comments
 
-## prototypes テーブル
+## posts テーブル
 | Column    | Type          | Options     |
 | --------  | ----------    | ----------- |
 | title     | string        | null: false |
@@ -33,5 +33,5 @@
 | profile   | reference | null: false |
 
 ### Association
-- belongs_to: profile
+- belongs_to: post
 - belongs_to: user
