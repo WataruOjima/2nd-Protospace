@@ -5,7 +5,7 @@ validates :concept,    presence: true
 validates :image,      presence: true
 validates :user,       presence: true
 
-belong_to :user
+belongs_to :user
 has_many :comments
 has_one_attached :image
 
