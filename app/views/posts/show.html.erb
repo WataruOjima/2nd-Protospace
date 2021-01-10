@@ -8,8 +8,8 @@
       <%# プロトタイプの投稿者とログインしているユーザーが同じであれば以下を表示する %>
       <% if user_signed_in? && current_user.id == @post.user_id %>
         <div class="prototype__manage">
-          <%= link_to "編集", root_path, class: :prototype__btn %>
-          <%= link_to "削除", root_path, class: :prototype__btn %>
+          <%= link_to "編集", edit_post_path, class: :prototype__btn %>
+          <%= link_to "削除", post_path(@post.id), method: :delite, class: :prototype__btn %>
         </div>
       <% end %>
       <%# // プロトタイプの投稿者とログインしているユーザーが同じであれば上記を表示する %>
