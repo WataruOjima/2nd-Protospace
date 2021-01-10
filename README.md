@@ -21,7 +21,7 @@
 | user      | reference     | null: false |
 
 ### Association
-- belong_to: user
+- belongs_to: user
 - has_many: comments
 
 ## comment テーブル
