@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja" >
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ProtoSpace</title>
+    <title>DeliciousRecipes</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <script src="https://kit.fontawesome.com/968836844b.js" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700,900&display=swap" rel="stylesheet">
@@ -16,15 +17,18 @@
         <div class="nav">
           <div class="nav__left">
             <%= link_to image_tag("logo.png", class: :logo), root_path %>
+            <%# ログインしているときは以下を表示するようにしましょう %>
+            <% if user_signed_in? %>
+             <%= link_to "投稿一覧", new_post_path, class: :nav__btn %>
+             <%= link_to "ユーザー一覧", users_path, class: :nav__btn %>
+             <%= link_to "新規投稿", new_post_path, class: :nav__btn %>
           </div>
-          <%# ログインしているときは以下を表示するようにしましょう %>
-          <% if user_signed_in? %>
             <div class="nav__right"> 
-              <%= link_to "ログアウト", destroy_user_session_path, class: :nav__logout %>
-              <%= link_to "新規投稿", new_post_path, class: :nav__btn %>
+              <%= link_to "マイページ", user_path(current_user.id), class: :nav__btn %> 
+              <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav__btn %>
             </div> 
           <% else %>
-          <%# ログインしていないときは以下を表示するようにしましょう %>
+            <%# ログインしていないときは以下を表示するようにしましょう %>
             <div class="nav__right">
               <%= link_to "ログイン", new_user_session_path, class: :nav__btn %>
               <%= link_to "新規登録", new_user_registration_path, class: :nav__btn %>
@@ -35,7 +39,7 @@
     </header>
     <%= yield %>
     <footer class="footer">
-      <p class="copyright">Copyright © PROTO SPACE All rights reserved.</p>
+      <p class="copyright">Copyright © 2020-2021 Daddy Plants All Rights Reserved.</p>
     </footer>
   </body>
 </html>

@@ -1,11 +1,11 @@
 ## users テーブル
-| Column    | Type   | Options     |
-| --------  | ------ | ----------- |
-| email     | string | null: false |
-| password  | string | null: false |
-| url       | string |             |
-| name      | string | null: false |
-| profile   | text   |             |
+| Column           | Type    | Options     |
+| ---------------- | ------- | ----------- |
+| name             | string  | null: false |
+| profile          | text    |             |
+| profile_image_id | string  |             |
+| email            | string  | null: false |
+| password         | string  | null: false |
 
 ### Association
 - has_many: posts
@@ -13,12 +13,11 @@
 
 ## posts テーブル
 | Column    | Type          | Options     |
-| --------  | ----------    | ----------- |
-| title     | string        | null: false |
-| catch_copy| text          | null: false |
-| concept   | text          | null: false |
-| image     | ActiveStorage | null: false |
-| user      | reference     | null: false |
+| --------- | ------------- | ----------- |
+| title     | string        |             |
+| catch_copy| string        |             |
+| concept   | text          |             |
+| user_id   | reference     | null: false |
 
 ### Association
 - belongs_to: user
@@ -26,7 +25,7 @@
 
 ## comment テーブル
 | Column    | Type      | Options     |
-| --------  | --------  | ----------- |
+| --------- | --------- | ----------- |
 | text      | text      | null: false |
 | user      | reference | null: false |
 | profile   | reference | null: false |
