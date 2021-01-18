@@ -34,9 +34,9 @@ ActiveRecord::Schema.define(version: 2021_01_09_113750) do
   end
 
   create_table "posts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "title", null: false
-    t.text "catch_copy", null: false
-    t.text "concept", null: false
+    t.string "title"
+    t.string "catch_copy"
+    t.text "concept"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -46,8 +46,8 @@ ActiveRecord::Schema.define(version: 2021_01_09_113750) do
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
-    t.string "url"
     t.string "name", null: false
+    t.string "profile_image_id"
     t.text "profile"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"

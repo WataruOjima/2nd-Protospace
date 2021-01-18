@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   before_action :move_to_index, only: [:edit, :update, :destroy]
 
   def index
-    @posts = Post.includes(:user)
+    @posts = Post.includes(:user).order("created_at DESC")
   end
 
   def new
@@ -50,7 +50,7 @@ class PostsController < ApplicationController
   end
 
   def move_to_index
-    redirect_to root_path unless current_user == @prototype.user
+    redirect_to root_path unless current_user == @post.user
   end
 
 end

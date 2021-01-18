@@ -1,25 +1,31 @@
-<%= form_with model: @post, local: true do |f|%>
-  <div class="field">
-    <%= f.label :title, "タイトル" %><br />
-    <%= f.text_field :title %>
-  </div>
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered ">
+      <div class="column is-6 ">
+        <%= form_with model: @post, local: true do |f| %>
+          <div class="field">
+            <%= f.label :title, "植物名", class: "label" %>
+            <%= f.text_field :title, class: "input" %>
+          </div>
 
-  <div class="field">
-    <%= f.label :catch_copy, "キャッチコピー" %><br />
-    <%= f.text_area :catch_copy, class: :form__text %>
-  </div>
+          <div class="field">
+            <%= f.label :catch_copy, "生育環境", class: "label" %>
+            <%= f.text_area :catch_copy, class: "textarea" %>
+          </div>
+        
+          <div class="field">
+            <%= f.label :concept, "キャプション", class: "label" %>
+            <%= f.text_area :concept, class: "textarea" %>
+          </div>
 
-  <div class="field">
-    <%= f.label :concept, "コンセプト" %><br />
-    <%= f.text_area :concept, class: :form__text %>
-  </div>
+          <div class="field">
+            <%= f.label :image, "写真", class: "label" %>
+            <%= f.file_field :image %>
+          </div>
 
-  <div class="field">
-    <%= f.label :image, "イメージ" %><br />
-    <%= f.file_field :image %>
+          <%= f.submit '投稿', class: "button is-success" %>
+        <% end %>
+      </div>
+    </div>
   </div>
-
-  <div class="actions">
-    <%= f.submit "保存する", class: :form__btn  %>
-  </div>
-<% end %>
+</section>

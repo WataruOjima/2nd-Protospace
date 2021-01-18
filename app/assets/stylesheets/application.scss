@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "bulma";
+ 
+// .main-image{
+//   height: 683px;
+//   background-image: url(botanical.png);
+//   background-repeat: none;
+//   background-size: contain;
+
+  body {
+    background-image: url(botanical.png);
+    background-size: cover;
+  }
+
+  .icon_image {
+    width: 200px;
+    height: 200px;
+    //サイズ指定
+    border-radius: 100px;
+    //画像を丸くする
+    object-fit: cover;
+    //タテヨコ比を変えないままトリミング
+
+    .profile_image-a {
+      width:200px;
+      height:200px;
+    	object-fit:cover;
+    	border-radius:50%;
+     }
+  }
