@@ -10,5 +10,5 @@ class User < ApplicationRecord
   validates :name, presence: true
 
   has_many :posts
-  attachment :profile_image
+  attachment :profile_image_id
 end
