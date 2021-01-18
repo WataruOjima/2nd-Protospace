@@ -1,14 +1,14 @@
 <section class="section">
-  <div class="container">
+  <div class="container ">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="columns is-centered">
           <div class="column is-4">
-            <figure class="image is-128x128"  style="margin-left: auto; margin-right: auto;">
+            <figure class="image-a is-128x128"  style="margin-left: auto; margin-right: auto;">
                <%= attachment_image_tag @user, :profile_image, fallback: "noimage.png", class: "profile_image is-rounded" %>
             </figure>
           </div>
-          <div class="column is-12">
+          <div class="column is-7">
             <table class="table is-fullwidth">
               <tr>
                 <td class="is-size-4">
@@ -32,3 +32,29 @@
     </div>
   </div>
 </section>
+
+
+<section class="section">
+  <div class="container ">
+    <div class="columns is-multiline">
+      <% @user.posts.each do |post| %>
+        <%# <div class="column"> %>
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+               <%= link_to post_path(post) do %>
+                  <%= image_tag post.image %>
+                <% end %>
+              </figure>
+            </div>
+              <div class="content">
+                <time><%= post.updated_at.strftime("%Y-%m-%d %H:%M") %></time>
+              </div>
+          </div>
+        <%# </div> %>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+

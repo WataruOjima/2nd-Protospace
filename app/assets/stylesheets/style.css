@@ -27,11 +27,15 @@ li {
 img {
   max-width: 100%;
   vertical-align: bottom;
+  object-fit: contain;
+
+  
 }
 
 a {
   text-decoration: none;
   color: #3b4043;
+  font-size: 20px;
 }
 
 /* ヘッダー */
@@ -175,7 +179,7 @@ a {
   display: block;
   font-size: 12px;
   color: #999;
-  text-align: right;
+  text-align: left;
   text-decoration: underline;
   width: 35vw;
 }
@@ -187,8 +191,59 @@ background-color: #FFFFFF;
 border-style: solid;
 border-width: 2px;
 border-color:#FFFFFF;
-font-size: 25px;
+font-size: 2px;
 }
+
+.image-a{
+padding: 10px 10px 50px 10px;
+background-color: #FFFFFF;
+border-style: solid;
+border-width: 2px;
+border-color:#FFFFFF;
+position: relative;
+width: 220px; /* 写真の幅 ＋　20px */
+max-width:100%;
+
+/* border: 10px solid #e6e6fa;ポラロイドのフチ幅を指定
+border-bottom: 45px solid #e6e6fa;ポラロイドのフチ下の幅を指定
+-webkit-box-shadow: 3px 3px 3px #777;
+   -moz-box-shadow: 3px 3px 3px #777;
+        box-shadow: 3px 3px 3px #777; */ 
+}
+.attachment.user.profile_image{
+  width: 200px;
+  height: 200px;
+}
+
+.image-b{
+  display: block; /* ブロックレベル表示に */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 10px 10px 30px; /*上 左右 下のパディング */
+  object-fit: contain;
+}
+
+.card-c{
+padding: 10px 10px 50px 10px;
+background-color: #FFFFFF;
+border-style: solid;
+border-width: 2px;
+border-color:#FFFFFF;
+position: relative;
+}
+
+.columns {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+/* object-fit: cover;
+width: 500px;
+height: 100px; */
+
+
 
 .prototype__wrapper{
   min-height: calc(100vh - 161px);
