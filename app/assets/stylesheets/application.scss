@@ -32,7 +32,8 @@
   //   background-image: url(botanical.png);
   //   background-size: cover;
     body {
-      background-image: url(botanical.png);
+      // background-image: url(botanical.png);
+      background-image: image-url("botanical.png");
       background-size: cover;
     }
 
