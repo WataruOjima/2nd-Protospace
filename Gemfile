@@ -61,3 +61,4 @@ gem "bulma-rails"
 gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
 gem 'carrierwave', '~> 1.0'
+gem "aws-sdk-s3", require: false
