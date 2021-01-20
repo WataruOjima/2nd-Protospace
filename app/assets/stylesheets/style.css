@@ -185,6 +185,7 @@ a {
 }
 
 /* 詳細ページ */
+
 .image{
 padding: 10px 10px 50px 10px;
 background-color: #FFFFFF;
@@ -237,12 +238,6 @@ position: relative;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
-
-/* object-fit: cover;
-width: 500px;
-height: 100px; */
-
 
 
 .prototype__wrapper{
@@ -302,10 +297,25 @@ color: #fafafa;
   background: #999;
 }
 
+
 .prototype__comments{
+  /* display: -webkit-flex; */
+  display: flex;
+  /* -webkit-justify-content: center; */
+  justify-content: center;
+  /* -webkit-align-items: stretch; */
+  align-items: stretch;
+  border: 1px solid #aaa;
+  /* text-align: center; */
+  /* height: 150px; */
+  padding: 10px;
+  margin: 20px 20px 20px 450px;
+  width: 500px;
   background-color: #f6f6f6;
-  padding: 20px;
+  /* padding: 10px;
   margin: 28px 0 40px 0;
+  display: block;  */
+  /* justify-content: center; */
 }
 
 .comments_lists{

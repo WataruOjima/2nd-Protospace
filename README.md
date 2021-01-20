@@ -23,12 +23,12 @@
 - belongs_to: user
 - has_many: comments
 
-## comment テーブル
+## comments テーブル
 | Column    | Type      | Options     |
 | --------- | --------- | ----------- |
 | text      | text      | null: false |
 | user      | reference | null: false |
-| profile   | reference | null: false |
+| post      | reference | null: false |
 
 ### Association
 - belongs_to: post
