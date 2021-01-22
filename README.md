@@ -17,7 +17,13 @@
 ## 本番環境
 https://daddy-plants.herokuapp.com/
 
-テストアカウント
+### Basic認証
+
+User: Admin
+
+Password: 2222
+
+### テストアカウント
 
 email: test@gmail.com
 
