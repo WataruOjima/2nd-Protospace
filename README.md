@@ -1,7 +1,10 @@
 
 ![Blogo](https://user-images.githubusercontent.com/75024186/105139029-10ea8300-5b39-11eb-90b9-1a46cd7f1d1c.png)
 
-あなたのとっておきのグリーンをシェアしましょう。
+〜あなたのとっておきのグリーンをシェアしよう〜
+
+コロナ自粛でおうち時間が増えたことで、
+植物をより身近な存在にして、新しい趣味のきっかけ作りに
 
 #  Share Green
 
@@ -14,12 +17,13 @@
 
 育成環境や植物について学べることができます。
 
+
 ## 本番環境
 https://daddy-plants.herokuapp.com/
 
 ### Basic認証
 
-User: Admin
+User: admin
 
 Password: 2222
 
