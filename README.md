@@ -6,7 +6,11 @@
 コロナ自粛でおうち時間が増えたことで、
 植物をより身近な存在にして、新しい趣味のきっかけ作りに
 
-https://gyazo.com/b04a309373b2e38a5a3cbb34a9a5634e
+
+
+<img width="1429" alt="スクリーンショット 2021-01-27 10 38 37" src="https://user-images.githubusercontent.com/75024186/105929892-e5611e80-608b-11eb-9542-45a14c6ca588.png">
+
+
 
 #  Share Green
 
@@ -19,6 +23,7 @@ https://gyazo.com/b04a309373b2e38a5a3cbb34a9a5634e
 
 育成環境や植物について学べることができます。
 
+操作や入力フォームをシンプルにすることにより、年代問わず分かりやすい操作性です。
 
 ## 本番環境
 https://daddy-plants.herokuapp.com/
